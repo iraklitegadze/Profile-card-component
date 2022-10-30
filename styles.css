@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Pale-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./images/bg-pattern-top.svg) no-repeat top/cover;
+    background: url(./images/bg-pattern-bottom.svg) no-repeat bottom/cover;
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*container*/
+
+.container{
+    padding-bottom:20px ;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container #user{
+    border: 5px solid #fff;
+    border-radius: 50px;
+    margin-top: -3.5rem;
+}
+
+.container #cover{
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*END*/
+
+/*SECTION USER*/
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.container  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.container ul li span{
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.container  ul li {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: var(--Very-dark-desaturated-blue);
+}
+.user h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.user h1 span{
+    font-weight: 400;
+}
+
+.user h2{
+    margin-bottom: 20px;
+}
+
+.stats{
+    margin-top: 10px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding: 10px;
+}
+.user h2{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+@media (width:375px){
+    .container{
+        min-width: 250px;
+        background: url(./images/bg-pattern-top.svg) no-repeat top/cover;
+        background: url(./images/bg-pattern-bottom.svg) no-repeat bottom/cover;
+    }
+}
+/*END SECTION USER*/
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+  
